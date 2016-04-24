@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function showA() {
+            this.a=12;
+        };
+        showA.prototype.show=function () {
+            alert(this.a);
+
+        };
+        var obj=new showA();
+        obj.show();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
